@@ -2,25 +2,61 @@
 
     
     .container{
+        
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 1000px;
-        max-height: 1000px;
+       
+       
+       
     }
     
-
-
 .elemento{
-   
+    width: 500px;
+    height: 500px;
 }
 
 
 
+ p{
+    text-align: center;
+}
+
+a{
+    position: center;
+}
+
+
+form input{
+    border: 1px solid #DBDBDB;
+    padding: 8px;
+    margin: 5px;
+    width: 267px;
+    height: 16px;
+    position: center;
+}
+
+form button{
+    background-color: #4CB5F9;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 8px 16px 8px 16px;
+    width: 290px;
+}
+
 #foto{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+#logo{
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin: auto;
 }
 
 #quadrado1, #quadrado2{
@@ -29,17 +65,41 @@
 }
 
 #quadrado1{
-    align-items: center;
-    width: 349px;
-    height: 398px;
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 380px;
     margin: 10px;
     padding: 40px;
-    position: ;
+    padding-bottom: -50px;
+    
 }
 
 #quadrado2{
-    width: 349px;
-    height: 62px;
+    display: block;
+    margin: auto;
+    margin: 10px;
+    width: 379px;
+    height: 61px;
     text-align: center;
+    padding-top: 5px;
+}
+
+#quadrado3{
+    display: block;
+    margin: auto;
+}
+
+#botao1{
+
+    margin: 0px 10px 0px 30px;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+#botao2{
     
+    margin: 0px 50px 0px 10px;
+    max-width: 35px;
+    max-height: 35px;
 }
