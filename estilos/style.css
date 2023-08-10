@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+    
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        max-height: 1000px;
+    }
+    
+
+
+.elemento{
+   
+}
+
+
+
+#foto{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#quadrado1, #quadrado2{
+    border: 1px solid #DBDBDB;
+    
+}
+
+#quadrado1{
+    align-items: center;
+    width: 349px;
+    height: 398px;
+    margin: 10px;
+    padding: 40px;
+    position: ;
+}
+
+#quadrado2{
+    width: 349px;
+    height: 62px;
+    text-align: center;
+    
+}
