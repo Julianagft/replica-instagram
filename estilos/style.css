@@ -8,18 +8,9 @@
         align-items: center;
         flex-wrap: wrap;
        
-       
-       
     }
-    
-.elemento{
-    width: 500px;
-    height: 500px;
-}
 
-
-
- p{
+p{
     text-align: center;
 }
 
