@@ -1,15 +1,54 @@
 @charset "UTF-8";
 
+
+body{
+    margin: 0;
+    
+}
     
     .container{
         
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        min-height: 100vh;
        
     }
 
+    .esquerda, .direita{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
+        .esquerda, .direita {
+          width: 50%;
+        }
+      }
+
+    .esquerda{
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+       margin-right: 50px;
+        
+    }
+    
+    .direita{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        
+        margin-left: -70px;
+        
+    }
+
+    
 p{
     text-align: center;
 }
@@ -59,13 +98,30 @@ form button{
     display: block;
     margin: auto;
     width: 300px;
-    height: 380px;
+    height: 300px;
     margin: 10px;
     padding: 40px;
     padding-bottom: -50px;
-    
 }
 
+.instagram-section {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 5px 20px;
+  }
+  
+  .divider-line {
+    width: 100px;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .or-text {
+    padding: 0 20px;
+    font-size: 18px;
+    color: gray;
+  }
+  
 #quadrado2{
     display: block;
     margin: auto;
