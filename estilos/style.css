@@ -51,16 +51,6 @@ body{
         
     }
 
-    
-p{
-    text-align: center;
-}
-
-a{
-    position: center;
-}
-
-
 form input{
     border: 1px solid #DBDBDB;
     padding: 8px;
@@ -82,7 +72,7 @@ form button{
 
 #foto{
     max-width: 600px;
-    max-height: 550px;
+    max-height: 600px;
 }
 
 #logo{
