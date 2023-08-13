@@ -3,10 +3,9 @@
 
 body{
     margin: 0;
-    
 }
     
-    .container{
+.container{
         
         display: flex;
         justify-content: center;
@@ -16,36 +15,34 @@ body{
        
     }
 
-    .esquerda, .direita{
+.esquerda, .direita{
         width: 100%;
         text-align: center;
         padding: 20px;
         box-sizing: border-box;
     }
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
         .esquerda, .direita {
           width: 50%;
         }
       }
 
-    .esquerda{
+.esquerda{
         display: flex;
         align-items: flex-end;
         justify-content: end;
         height: 100%;
-       
-       
-        
-    }
-    @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
         .esquerda {
           display: none; /* Oculta a div quando a largura da tela for 768 pixels ou menor */
         }
       }
 
 
-    .direita{
+.direita{
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -85,6 +82,7 @@ form button{
     max-height: 200px;
     display: block;
     margin: auto;
+    transform: translate(-6px, -15px);
 }
 
 #quadrado1, #quadrado2{
@@ -108,13 +106,13 @@ form button{
     padding: 10px 0px 5px 20px;
   }
   
-  .divider-line {
+.divider-line {
     width: 100px;
     height: 1px;
     background-color: #ccc;
   }
   
-  .or-text {
+.or-text {
     padding: 0 20px;
     font-size: 18px;
     color: gray;
@@ -132,9 +130,6 @@ form button{
 
 #quadrado3{
     display: block;
-    
-    
-    
 }
 
 #botao1, #botao2{
