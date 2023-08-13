@@ -9,7 +9,6 @@ body{
     .container{
         
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         flex-direction: row;
@@ -32,24 +31,30 @@ body{
 
     .esquerda{
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-end;
+        justify-content: end;
         height: 100%;
-       margin-right: 50px;
+       
        
         
     }
-    
+    @media (max-width: 768px) {
+        .esquerda {
+          display: none; /* Oculta a div quando a largura da tela for 768 pixels ou menor */
+        }
+      }
+
+
     .direita{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        justify-content: start;
         height: 100%;
-        
-        margin-left: -70px;
-        
-        transform: translate(-125px, 10px);
-        
+              
     }
+
+    
 
 form input{
     border: 1px solid #DBDBDB;
@@ -127,19 +132,24 @@ form button{
 
 #quadrado3{
     display: block;
-    margin: auto;
-}
-
-#botao1{
-
-    margin: 0px 10px 0px 30px;
-    max-width: 35px;
-    max-height: 35px;
-}
-
-#botao2{
     
-    margin: 0px 50px 0px 10px;
-    max-width: 35px;
-    max-height: 35px;
+    
+    
+}
+
+#botao1, #botao2{
+    margin: 5px;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.texto{
+    display: block;
+    width: 100%;
+    margin-left: 10%;
 }
