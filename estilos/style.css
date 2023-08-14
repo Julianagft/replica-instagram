@@ -96,6 +96,7 @@ body{
         width: 267px;
         height: 16px;
         position: center;
+        
     }
 
     form button{
@@ -106,6 +107,10 @@ body{
         margin: 5px;
         padding: 8px 16px 8px 16px;
         width: 290px;
+    }
+
+    form input:focus{
+        outline: none;
     }
 
 
