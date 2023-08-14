@@ -1,18 +1,41 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'segoe';
+    src: url('../fontes/segoe-ui.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'segoe-bold';
+    src: url('../fontes/segoe-ui-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+} 
+
+:root{
+    --fonte-principal:'segoe', cursive;
+    --fonte-destaque: 'segoe-bold', cursive;
+}
 
 body{
     margin: 0;
-}
     
+}
+   
 .container{
-        
+        font-family: var(--fonte-principal);
+        font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         min-height: 100vh;
-       
+    }
+
+.container  a{
+        text-decoration: none;
     }
 
 .esquerda, .direita{
@@ -20,6 +43,7 @@ body{
         text-align: center;
         padding: 20px;
         box-sizing: border-box;
+       
     }
 
 @media (min-width: 768px) {
@@ -41,6 +65,11 @@ body{
         }
       }
 
+    #foto{
+        max-width: 600px;
+        max-height: 600px;
+    }
+
 
 .direita{
         display: flex;
@@ -51,39 +80,42 @@ body{
               
     }
 
+    .bold{
+        font-family: var(--fonte-destaque);
+    }
+    
+    .fonte-menor{
+        font-size: 12px;
+    }
     
 
-form input{
-    border: 1px solid #DBDBDB;
-    padding: 8px;
-    margin: 5px;
-    width: 267px;
-    height: 16px;
-    position: center;
-}
+    form input{
+        border: 1px solid #DBDBDB;
+        padding: 8px;
+        margin: 5px;
+        width: 267px;
+        height: 16px;
+        position: center;
+    }
 
-form button{
-    background-color: #4CB5F9;
-    color: white;
-    border-style: none;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 8px 16px 8px 16px;
-    width: 290px;
-}
+    form button{
+        background-color: #4CB5F9;
+        color: white;
+        border-style: none;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 8px 16px 8px 16px;
+        width: 290px;
+    }
 
-#foto{
-    max-width: 600px;
-    max-height: 600px;
-}
 
-#logo{
-    max-width: 200px;
-    max-height: 200px;
-    display: block;
-    margin: auto;
-    transform: translate(-6px, -15px);
-}
+    #logo{
+        max-width: 200px;
+        max-height: 200px;
+        display: block;
+        margin: auto;
+        transform: translate(-6px, -15px);
+    }
 
 #quadrado1, #quadrado2{
     border: 1px solid #DBDBDB;
@@ -100,23 +132,35 @@ form button{
     padding-bottom: -50px;
 }
 
-.instagram-section {
-    display: flex;
-    align-items: center;
-    padding: 10px 0px 5px 20px;
-  }
+    #quadrado1 a{
+        color: #385189;
+    }
+
+    .logoface{
+        transform: translate(-3px, 5px);
+    }
+
+    .instagram-section {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 5px 20px;
+    }
   
-.divider-line {
-    width: 100px;
-    height: 1px;
-    background-color: #ccc;
-  }
+    .divider-line {
+        width: 100px;
+        height: 1px;
+        background-color: #ccc;
+        margin-left: 0;
+        margin-right: 0;
+    }
   
-.or-text {
-    padding: 0 20px;
-    font-size: 18px;
-    color: gray;
-  }
+    .or-text {
+        padding: 0 20px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #a8a5a5;
+        margin: 0;
+    }
   
 #quadrado2{
     display: block;
@@ -128,23 +172,63 @@ form button{
     padding-top: 5px;
 }
 
+    #quadrado2 a{
+        color: #00A2F8;
+    }
+
 #quadrado3{
     display: block;
 }
 
-#botao1, #botao2{
-    margin: 5px;
-}
+    #botao1, #botao2{
+        margin: 5px;
+    }
 
-.botao{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left: 10%;
-}
+    .texto{
+        display: block;
+        width: 100%;
+        margin-left: 10%;
+    }
 
-.texto{
-    display: block;
+    .botao{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 10%;
+    }
+
+footer{
+    text-align: center;
+    display: contents;
+    align-content: center;
     width: 100%;
-    margin-left: 10%;
-}
+ }
+
+
+    .links{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 110px 50px 110px;
+    }
+
+    .links a{
+        text-decoration: none;
+        font-family: var(--fonte-principal);
+        font-size: 12px;
+        color:#888585;
+    }
+    @media (max-width: 768px) {
+        .links {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    footer a:hover{
+        text-decoration: underline;
+    }
+    
+    
